@@ -6,11 +6,11 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="on_call_issue_dashboard"/>
   <Description DefaultValue="Update table datas and pivot tables."/>
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
+  <IconUrl DefaultValue="https://theoclou.github.io/ExcelAddInSupport/src/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://theoclou.github.io/ExcelAddInSupport/src/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
-    <AppDomain>https://www.contoso.com</AppDomain>
+    <AppDomain>https://theoclou.github.io</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Workbook"/>
@@ -62,9 +62,9 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3000/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://theoclou.github.io/ExcelAddInSupport/src/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://theoclou.github.io/ExcelAddInSupport/src/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://theoclou.github.io/ExcelAddInSupport/src/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
