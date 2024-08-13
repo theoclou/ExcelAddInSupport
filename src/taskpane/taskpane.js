@@ -12,10 +12,10 @@ Office.onReady((info) => {
     document.getElementById("run").onclick = run;
     document.getElementById("refresh").onclick = refreshAllPivotTables;
   }
-	console.log(info.host);
+  console.log(info.host);
 });
 
-export async function run() {
+async function run() {
   try {
     await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Issue Tracking Dev");
@@ -32,41 +32,33 @@ export async function run() {
       await context.sync();
       issuTable.resize(`A1:AE${firstBlankRow + usedNewRange.rowCount - 1}`);
       await context.sync();
-	document.getElementById("result").innerHTML = "Update Successful";
-	document.getElementById("result").style.color = "#00ee00";
+      document.getElementById("result").innerHTML = "Update Successful";
+      document.getElementById("result").style.color = "#00ee00";
 
       console.log("Update done");
     });
   } catch (error) {
-	document.getElementById("result").innerHTML = "Update Failed";
-	document.getElementById("result").style.color = "#ee0000";
+    document.getElementById("result").innerHTML = "Update Failed";
+    document.getElementById("result").style.color = "#ee0000";
     console.error(error);
   }
 }
 
-    async function refreshAllPivotTables() {
-	try{
-      await Excel.run(async (context) => {
-        const workbook = context.workbook;
-        const pivotTables = workbook.pivotTables;
-        pivotTables.refreshAll();
-        await context.sync();
-	document.getElementById("result").innerHTML = "Refresh Successful";
-	document.getElementById("result").style.color = "#00ee00";
-        console.log("Update done");
-      });
-}	catch(error){
-	document.getElementById("result").innerHTML = "Refresh Failed";
-document.getElementById("result").style.color = "#ee0000";
+async function refreshAllPivotTables() {
+  try {
+    await Excel.run(async (context) => {
+      const workbook = context.workbook;
+      const pivotTables = workbook.pivotTables;
+      pivotTables.refreshAll();
+      await context.sync();
+      document.getElementById("result").innerHTML = "Refresh Successful";
+      document.getElementById("result").style.color = "#00ee00";
+      console.log("Update done");
+    });
+  } catch (error) {
+    document.getElementById("result").innerHTML = "Refresh Failed";
+    document.getElementById("result").style.color = "#ee0000";
     console.error(error);
+  }
 }
-    }
 
-    async function tryCatch(callback) {
-      try {
-        await callback();
-      } catch (error) {
-        // Note: In a production add-in, you'd want to notify the user through your add-in's UI.
-        console.error(error);
-      }
-    }
