@@ -4,7 +4,7 @@
   <Version>1.0.0.0</Version>
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="on_call_issue_dashboard"/>
+  <DisplayName DefaultValue="On Call Issue Dashboard"/>
   <Description DefaultValue="Update table datas and pivot tables."/>
   <IconUrl DefaultValue="https://theoclou.github.io/ExcelAddInSupport/src/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://theoclou.github.io/ExcelAddInSupport/src/assets/icon-64.png"/>
