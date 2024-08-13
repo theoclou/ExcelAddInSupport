@@ -12,6 +12,7 @@ Office.onReady((info) => {
     document.getElementById("run").onclick = run;
     document.getElementById("refresh")!.onclick = refreshAllPivotTables;
   }
+	console.log(info.host);
 });
 
 export async function run() {
