@@ -10,7 +10,7 @@ Office.onReady((info) => {
     document.getElementById("sideload-msg").style.display = "none";
     document.getElementById("app-body").style.display = "flex";
     document.getElementById("run").onclick = run;
-    document.getElementById("refresh")!.onclick = refreshAllPivotTables;
+    document.getElementById("refresh").onclick = refreshAllPivotTables;
   }
 	console.log(info.host);
 });
