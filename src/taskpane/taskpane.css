@@ -83,3 +83,9 @@ b {
   padding: 20px; /* Ajoutez du padding si nécessaire */
   border-radius: 8px; /* Ajoutez des coins arrondis si souhaité */
 }
+
+#result {
+	display : flex;
+	align : center;
+	
+}
